@@ -37,13 +37,15 @@ div.transparentbox {
 }
 
 div.textoverlay{
-	width: 2/3;
+	width: 80%;
   	top: 0; 
   	left: 0;
-  	margin-top: -180px;
-  	text-align: center;
+  	margin-top: -200px;
+  	margin-left: 35%;
+  	text-align: left;
   	z-index: 2;
   	position: relative;
+  	color: #E9F0F0;
 }
 
 
