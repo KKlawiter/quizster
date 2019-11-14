@@ -11,28 +11,16 @@
 
   <body>
     <div class='background'>
-      <h1>Katrina's Quizster App</h1>
+      <%= link_to root_path do %>
+        <h1>Katrina's Quizster App</h1>
+      <% end %>
+      <br/>
+      <h2>
+        <%= link_to 'Add Your Fact', new_fact_path %>
+      </h2>
     </div>
 
     <br/>
-
-    <div>
-      
-
-      <div>
-        <div class='transparentbox'>
-      </div>
-      <div class="textoverlay">
-        <ul>
-          <li> This should be a rails application, not a plain HTML page. </li>
-          <li> The web application has a page with static content on it. </li>
-          <li> The web application is hosted on Heroku. </li>
-          <li> The code for the application is hosted on GitHub. </li>
-          <li> There is a headline on the page of the application that is a non-black color.</li>
-        </ul>
-      </div>
-    </div>
-
     <%= yield %>
   </body>
 </html>

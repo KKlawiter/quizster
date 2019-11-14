@@ -1,0 +1,9 @@
+<div class='background'>
+	<h1>Enter Your Fact</h1>
+	<%= simple_form_for @fact do |f| %>
+	  <%= f.input :question %>
+	  <%= f.input :answer %>
+	  <br />
+	  <%= f.submit 'Submit', class: 'btn btn-danger' %>
+	<% end %>
+</div>
