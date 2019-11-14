@@ -10,17 +10,16 @@
   </head>
 
   <body>
-    <div class='background'>
-      <%= link_to root_path do %>
-        <h1>Katrina's Quizster App</h1>
-      <% end %>
-      <br/>
-      <h2>
-        <%= link_to 'Add Your Fact', new_fact_path %>
-      </h2>
+     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" >Katrina's Song Finder App</a>
+      <%= link_to 'Find a New Song', root_path, class: 'nav-link' %>
+      <%= link_to 'Add a New Song', new_song_path, class: 'nav-link' %>
+    </nav>
     </div>
-
-    <br/>
+      
     <%= yield %>
   </body>
 </html>

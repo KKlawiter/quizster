@@ -1,6 +1,6 @@
 class FactsController < ApplicationController
 	def index
-	  	@fact = Fact.order("RANDOM()").first
+	  	@fact = Fact.order("RANDOM()")
   	end
 
   	def create
