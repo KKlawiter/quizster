@@ -10,25 +10,16 @@
   </head>
 
   <body>
-    <div class='background'>
-      <h1>Katrina's Quizster App</h1>
+     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Katrina's Quizster App</a>
+
+      <%= link_to 'New Song', new_song_path, class: 'nav-link' %>
+    </nav>
     </div>
-
-    <br/>
-
-    <div>
       
-
-      <div>
-        <div class='transparentbox'>
-      </div>
-      <div class="textoverlay">
-        <ul>
-          <li> What is your favorite song? </li>
-          <li> Tell us the name, artist and genre </li>
-        </ul>
-      </div>
-    </div>
 
     <%= yield %>
   </body>
