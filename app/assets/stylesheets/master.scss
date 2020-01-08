@@ -11,6 +11,7 @@
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+  text-align: center;
 }
 
 .article.post{
@@ -25,7 +26,15 @@
   border-color:#e4e4e4 #bebebd #bebebd #e4e4e4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin:0;
-  padding:0;
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	font-weight: 600;
+	letter-spacing: -1.5px;
+}
+
+h2 {
+  font-family: 'nobileregular', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }

@@ -1,5 +1,5 @@
 class SongsController < ApplicationController
-
+	attr_reader :name, :artist, :genre
 	def index
 		@song = Song.order("RANDOM()").first
   	end

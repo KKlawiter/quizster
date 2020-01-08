@@ -1,9 +1,6 @@
 <div class="booyah-box">
-	<% @song.each do |song| %>
-		<h1><%= @song.name %></h1>
-		<h1><%= @song.artist %></h1>
-		<h1><%= @song.genre %></h1>
-	<% end %>
+	<h1> Listen to this song! </h1>
+	<h2> Title: <%= @song.name %></h2><br />
+	<h2> By: <%= @song.artist %></h2><br />
+	<h2> Genre: <%= @song.genre %></h2><br />
 </div>
-
-
